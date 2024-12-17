@@ -5,6 +5,6 @@ class Data:
     def __init__(self):
        pass
 
-    def dataload(self, path):
+    def loader(self, path):
        data = pd.read_csv(path)
        return data
