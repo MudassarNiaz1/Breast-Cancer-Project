@@ -1,6 +1,6 @@
 import pandas as pd
 
-from dataloading import Data
+from .dataloading import Data
 
 obj = Data()
 df = obj.loader(r'artifacts\breast cancer.csv')

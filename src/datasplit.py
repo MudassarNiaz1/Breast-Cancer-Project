@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 
-from datatransform import Transform
+from .datatransform import Transform
 
 trans = Transform()
 x, y  = trans.transformer()
