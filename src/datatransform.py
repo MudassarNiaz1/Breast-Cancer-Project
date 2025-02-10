@@ -1,3 +1,4 @@
+import joblib
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 from .datacleaning import Cleaner
@@ -19,6 +20,8 @@ class Transform:
         y = df['diagnosis']
 
         sc = StandardScaler()
-        x = sc.fit_transform(x)
+        sc.fit(x)
+        joblib.dump(sc, "models/scaler.pkl")
+        x = sc.transform(x)
 
         return x, y
