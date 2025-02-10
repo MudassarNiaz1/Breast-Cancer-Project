@@ -7,7 +7,7 @@ sc = joblib.load("models\\scaler.pkl")
 # Model load
 model = joblib.load("models\\model.pkl")
 
-# test data
+# user data
 df = pd.read_csv("artifacts\\data.csv")
 data = df.drop(['diagnosis', 'id'], axis=1)
 data = data.head(1).values
