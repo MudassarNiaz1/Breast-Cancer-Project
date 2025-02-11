@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+</head>
+<body>
+
+
+    <form action="{{ url_for('hello_world')}}" method="post">
+        <label for="name">Name1:</label>
+        <input type="text" name="name1"><br><br>
+
+        <label for="name">Name2:</label>
+        <input type="text" name="name2"><br><br>
+
+        <label for="name">Name3:</label>
+        <input type="text" name="name3"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>Hello, {{name}}</p>
+    
+</body>
+</html>
