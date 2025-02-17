@@ -9,17 +9,113 @@
 
 
     <form action="{{ url_for('hello_world')}}" method="post">
-        <label for="name">Name1:</label>
-        <input type="text" name="name1"><br><br>
-
-        <label for="name">Name2:</label>
-        <input type="text" name="name2"><br><br>
-
-        <label for="name">Name3:</label>
-        <input type="text" name="name3"><br><br>
-        <button type="submit">Submit</button>
+     {% for i in columns%}
+        <label>{{i}}</label>
+        <input type="text" name="{{i}}"><br><br>
+     {%endfor%}
+    <button type="submit">Submit</button>
     </form>
     <p>Hello, {{name}}</p>
     
 </body>
 </html>
+
+
+
+
+
+
+ <!-- <label for="name">radius_mean</label>
+        <input type="text" name="radius_mean"><br><br>
+
+        <label for="name">texture_mean</label>
+        <input type="text" name="texture_mean"><br><br>
+
+        <label for="name">perimeter_mean</label>
+        <input type="text" name="perimeter_mean"><br><br>
+
+        <label for="name">area_mean</label>
+        <input type="text" name="area_mean"><br><br>
+
+        <label for="name">smoothness_mean</label>
+        <input type="text" name="smoothness_mean"><br><br>
+
+        <label for="name">compactness_mean</label>
+        <input type="text" name="compactness_mean"><br><br>
+
+        <label for="name">concavity_mean</label>
+        <input type="text" name="concavity_mean"><br><br>
+
+        <label for="name">concave points_mean</label>
+        <input type="text" name="concave points_mean"><br><br>
+
+        <label for="name">symmetry_mean</label>
+        <input type="text" name="symmetry_mean"><br><br>
+
+        <label for="name">fractal_dimension_mean</label>
+        <input type="text" name="fractal_dimension_mean"><br><br>
+
+        <label for="name">radius_se</label>
+        <input type="text" name="radius_se"><br><br>
+
+        <label for="name">texture_se</label>
+        <input type="text" name="texture_se"><br><br>
+
+        <label for="name">perimeter_se</label>
+        <input type="text" name="perimeter_se"><br><br>
+
+        <label for="name">area_se</label>
+        <input type="text" name="area_se"><br><br>
+
+        <label for="name">smoothness_se</label>
+        <input type="text" name="smoothness_se"><br><br>
+
+        <label for="name">compactness_se</label>
+        <input type="text" name="compactness_se"><br><br>
+
+        <label for="name">fractal_dimension_mean</label>
+        <input type="text" name="fractal_dimension_mean"><br><br>
+
+        <label for="name">concavity_se</label>
+        <input type="text" name="concavity_se"><br><br>
+
+        <label for="name">concave_points_se</label>
+        <input type="text" name="concave_points_se"><br><br>
+
+        <label for="name">symmetry_se</label>
+        <input type="text" name="symmetry_se"><br><br>
+
+        <label for="name">fractal_dimension_se</label>
+        <input type="text" name="fractal_dimension_se"><br><br>
+
+        <label for="name">radius_worst</label>
+        <input type="text" name="radius_worst"><br><br>
+
+        <label for="name">texture_worst</label>
+        <input type="text" name="texture_worst"><br><br>
+
+        <label for="name">perimeter_worst</label>
+        <input type="text" name="perimeter_worst"><br><br>
+
+        <label for="name">area_worst</label>
+        <input type="text" name="area_worst"><br><br>
+
+        <label for="name">smoothness_worst</label>
+        <input type="text" name="smoothness_worst"><br><br>
+
+        <label for="name">compactness_worst</label>
+        <input type="text" name="compactness_worst"><br><br>
+
+        <label for="name">concavity_worst</label>
+        <input type="text" name="concavity_worst"><br><br>
+
+        <label for="name">concave_points_worst</label>
+        <input type="text" name="concave_points_worst"><br><br>
+
+        <label for="name">symmetry_worst</label>
+        <input type="text" name="symmetry_worst"><br><br>
+
+        <label for="name">fractal_dimension_worst</label>
+        <input type="text" name="fractal_dimension_worst"><br><br>
+        <button type="submit">Submit</button>
+    </form>
