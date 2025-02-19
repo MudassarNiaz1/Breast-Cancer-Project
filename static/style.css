@@ -1,4 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    width: 20%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+h2 {
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}
+.btn {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #218838;
+}
+/* Result Popup Styling */
+.result-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+/* Show popup when targeted */
+#result:target {
+    display: block;
+}
+.benign {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.malignant {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.close-btn {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: auto;
+    width: fit-content;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -56,4 +186,4 @@ input {
 }
 .malignant {
     background-color: #e9dada;
-}
+} */
